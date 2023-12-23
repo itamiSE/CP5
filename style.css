@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+  
+.car {
+    width: 200px; 
+    height: 100px;
+    background: red; 
+    position: absolute;
+    top: 50%;
+    left: -200px; 
+    animation: drive 2s forwards; 
+    border-radius: 20%;
+}
+  
+.window {
+    position: absolute;
+    background: #00aeff;
+    width: 70px; 
+    height: 50px; 
+    border-radius: 30%; 
+    right: 0px;
+    top: 5px;
+}
+
+.wheel1 {
+    position: absolute;
+    background: #000;
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    bottom: 0;
+    transform: translateY(50%);
+    left: -5px;
+}
+
+.wheel2 {
+    position: absolute;
+    background: #000;
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    bottom: 0;
+    transform: translateY(50%);
+    right: -5px;
+}
+
+  
+@keyframes drive {
+    to {
+      left: calc(100% - 250px); 
+    }
+}
+  
